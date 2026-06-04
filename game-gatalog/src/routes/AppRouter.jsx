@@ -8,7 +8,6 @@ import NotFound from "../pages/NotFound/NotFound";
 function AppRouter() {
   return (
     <BrowserRouter>
-    <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
 

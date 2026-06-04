@@ -5,6 +5,7 @@ import GameCard from "../../components/GameCard/GameCard";
 import Loading from "../../components/Loading/Loading";
 import "./Home.css";
 import Tooltip from "../../components/ToolTip/ToolTip";
+import Header from "../../components/Header/Header";
 
 function Home() {
   const [games, setGames] = useState([]);
@@ -24,25 +25,29 @@ function Home() {
   if (loading) return <Loading />;
 
   return (
-    <div className="home">
-      <section className="title">
-        <h1>Catálogo de jogos</h1>
-        <p>Explore os melhores jogos da história</p>
-        <Tooltip text="Todos os Jogos">
-          <button onClick={() => navigate("/games")}>
-            Ver catálogo completo
-          </button>
-        </Tooltip>
-      </section>
-      <section className="featured">
-        <h2>🔥 Destaques</h2>
+    <div>
+      <Header />
+      <div className="home">
 
-        <div className="grid">
-          {games.map((game) => (
-            <GameCard key={game.id} game={game} />
-          ))}
-        </div>
-      </section>
+        <section className="title">
+          <h1>Catálogo de jogos</h1>
+          <p>Explore os melhores jogos da história</p>
+          <Tooltip text="Todos os Jogos">
+            <button onClick={() => navigate("/games")}>
+              Ver catálogo completo
+            </button>
+          </Tooltip>
+        </section>
+        <section className="featured">
+          <h2>🔥 Destaques</h2>
+
+          <div className="grid">
+            {games.map((game) => (
+              <GameCard key={game.id} game={game} />
+            ))}
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

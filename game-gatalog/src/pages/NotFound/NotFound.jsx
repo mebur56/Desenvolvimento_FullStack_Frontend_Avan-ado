@@ -1,21 +1,23 @@
 import { useNavigate } from "react-router-dom";
 import "./NotFound.css";
-
+import Header from "../../components/Header/Header";
 function NotFound() {
   const navigate = useNavigate();
 
   return (
-    <div className="notfound-container">
-      <h1>404</h1>
-      <h2>Página não encontrada</h2>
+    <div><Header />
+      <div className="notfound-container">
+        <h1>404</h1>
+        <h2>Página não encontrada</h2>
 
-      <p>
-        A página que você está tentando acessar não existe ou foi removida.
-      </p>
+        <p>
+          A página que você está tentando acessar não existe ou foi removida.
+        </p>
 
-      <button onClick={() => navigate("/")}>
-        Voltar para Home
-      </button>
+        <button onClick={() => navigate("/")}>
+          Voltar para o início
+        </button>
+      </div>
     </div>
   );
 }
