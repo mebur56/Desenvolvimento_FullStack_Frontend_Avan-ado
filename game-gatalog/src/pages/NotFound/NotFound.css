@@ -9,13 +9,13 @@
   color: white;
   text-align: center;
   padding: 20px;
-  gap: 10px; /* 🔥 isso resolve o overlap */
+  gap: 10px; 
 }
 
 .notfound-container h1 {
   font-size: 100px;
   margin: 0;
-  line-height: 1; /* 🔥 evita colisão vertical */
+  line-height: 1; 
   color: #4f46e5;
 }
 

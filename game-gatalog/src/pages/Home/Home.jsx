@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import request  from "../../services/mockRequests";
+import request from "../../services/mockRequests";
 import GameCard from "../../components/GameCard/GameCard";
 import Loading from "../../components/Loading/Loading";
 import "./Home.css";
+import Tooltip from "../../components/ToolTip/ToolTip";
 
 function Home() {
   const [games, setGames] = useState([]);
@@ -15,7 +16,7 @@ function Home() {
     const data = request.getGameList();
 
     setTimeout(() => {
-      setGames(data.slice(0, 3)); 
+      setGames(data.slice(0, 3));
       setLoading(false);
     }, 800);
   }, []);
@@ -27,10 +28,11 @@ function Home() {
       <section className="title">
         <h1>Catálogo de jogos</h1>
         <p>Explore os melhores jogos da história</p>
-
-        <button onClick={() => navigate("/games")}>
-          Ver catálogo completo
-        </button>
+        <Tooltip text="Todos os Jogos">
+          <button onClick={() => navigate("/games")}>
+            Ver catálogo completo
+          </button>
+        </Tooltip>
       </section>
       <section className="featured">
         <h2>🔥 Destaques</h2>

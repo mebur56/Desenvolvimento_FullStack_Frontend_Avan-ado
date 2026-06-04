@@ -1,5 +1,6 @@
 import "./GameCard.css";
 import { useNavigate } from "react-router-dom";
+import Tooltip from "../ToolTip/ToolTip";
 
 function GameCard({ game }) {
   const navigate = useNavigate();
@@ -25,12 +26,14 @@ function GameCard({ game }) {
             : game.description}
         </p>
 
-        <button
-          className="btn"
-          onClick={() => navigate(`/games/${game.id}`)}
-        >
-          Ver detalhes
-        </button>
+        <Tooltip text="Ver detalhes do jogo">
+          <button
+            className="btn"
+            onClick={() => navigate(`/games/${game.id}`)}
+          >
+            Ver detalhes
+          </button>
+        </Tooltip>
       </div>
     </div>
   );

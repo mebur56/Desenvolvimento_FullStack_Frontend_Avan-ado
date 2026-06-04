@@ -1,16 +1,17 @@
 import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
+import Tooltip from "../ToolTip/ToolTip";
+import SearchBar from "../SearchBar/SearchBar";
 
 function Header() {
   const location = useLocation();
   const navigate = useNavigate();
   return (
     <header className="header">
-      <div className="logo"  onClick={() => navigate("/")}>
+      <div className="logo" onClick={() => navigate("/")}>
         🎮 Catálogo de jogos
       </div>
-
       <nav className="nav">
         <Link
           to="/"
@@ -18,7 +19,6 @@ function Header() {
         >
           Home
         </Link>
-
         <Link
           to="/games"
           className={location.pathname === "/games" ? "active" : ""}

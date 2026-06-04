@@ -7,7 +7,6 @@
   color: #fff;
 }
 
-/* GRID DOS CARDS */
 .games-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -15,8 +14,24 @@
   justify-items: center;
 }
 
-/* opcional: fundo da página */
 .games-page {
   min-height: 100vh;
   background: #0f0f0f;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #aaa;
+  margin-top: 40px;
+}
+
+.empty-state h2 {
+  color: white;
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  font-size: 14px;
+  color: #888;
 }

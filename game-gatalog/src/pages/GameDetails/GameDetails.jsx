@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Loading from "../../components/Loading/Loading";
 import request from "../../services/mockRequests";
 import "./GameDetails.css";
+import Tooltip from "../../components/ToolTip/ToolTip";
 
 function GameDetails() {
   const { id } = useParams();
@@ -21,25 +22,29 @@ function GameDetails() {
   }, [id]);
 
   if (loading) {
-    return <Loading/>
+    return <Loading />
   }
 
   if (!game) {
     return (
       <div className="not-found">
         <h2>Jogo não encontrado</h2>
-        <button onClick={() => navigate("/games")}>
-          Voltar
-        </button>
+        <Tooltip text="Lista de jogos">
+          <button onClick={() => navigate("/games")}>
+            Voltar
+          </button>
+        </Tooltip>
       </div>
     );
   }
 
   return (
     <div className="details-container">
-      <button className="back-btn" onClick={() => navigate(-1)}>
-        ← Voltar
-      </button>
+      <Tooltip text="Lista de jogos">
+        <button className="back-btn" onClick={() => navigate(-1)}>
+          ← Voltar
+        </button>
+      </Tooltip>
 
       <div className="details-card">
         <img src={game.imgUrl} alt={game.name} />

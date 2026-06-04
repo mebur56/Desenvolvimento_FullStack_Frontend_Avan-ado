@@ -1,8 +1,8 @@
 .details-container {
   padding: 20px;
-  color: white;
-  min-height: 100vh;
   background: #0f0f0f;
+  min-height: 100vh;
+  color: white;
 }
 
 .back-btn {
@@ -21,10 +21,11 @@
   background: #1a1a1a;
   padding: 20px;
   border-radius: 12px;
+  align-items: flex-start;
 }
 
 .details-card img {
-  width: 300px;
+  width: 320px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -39,7 +40,23 @@
   line-height: 1.5;
 }
 
-.loading {
-  color: white;
-  padding: 20px;
+@media (max-width: 768px) {
+  .details-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .details-card img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .description {
+    text-align: left;
+  }
 }

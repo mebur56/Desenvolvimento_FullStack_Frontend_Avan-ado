@@ -1,0 +1,42 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 40px 10px 14px; 
+  border: none;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: white;
+  outline: none;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border: none;
+  background: transparent;
+  color: #aaa;
+  font-size: 16px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clear-btn:hover {
+  color: white;
+}

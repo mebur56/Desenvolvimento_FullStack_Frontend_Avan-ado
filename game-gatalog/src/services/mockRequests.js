@@ -9,7 +9,7 @@ const getGameById = (id) => {
 };
 
 const searchGame = (search) => {
-  return gamelist.find((x) =>
+  return gamelist.filter((x) =>
     x.name.toLowerCase().includes(search.toLowerCase())
   );
 };
