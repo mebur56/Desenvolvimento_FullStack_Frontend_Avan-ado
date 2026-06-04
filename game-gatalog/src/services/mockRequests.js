@@ -1,8 +1,21 @@
+import gamelist from "../data/GameList.json";
 
-function  getGameList () {
-    return ""
-}
+const getGameList = () => {
+  return gamelist;
+};
 
-function getGameById(id){
-    
-}
+const getGameById = (id) => {
+  return gamelist.find((x) => x.id === Number(id));
+};
+
+const searchGame = (search) => {
+  return gamelist.find((x) =>
+    x.name.toLowerCase().includes(search.toLowerCase())
+  );
+};
+
+export default {
+  getGameList,
+  getGameById,
+  searchGame,
+};

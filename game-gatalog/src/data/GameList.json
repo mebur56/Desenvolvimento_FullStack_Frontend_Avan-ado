@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "The Witcher 3: Wild Hunt",
+    "releaseDate": "2015-05-19",
+    "developer": "CD Projekt Red",
+    "genre": "RPG / Aventura",
+    "description": "Um RPG de mundo aberto onde você controla Geralt de Rívia em busca de sua filha adotiva enquanto enfrenta monstros e decisões morais complexas.",
+    "imgUrl": "/images/witcher.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Grand Theft Auto V",
+    "releaseDate": "2013-09-17",
+    "developer": "Rockstar North",
+    "genre": "Ação / Mundo Aberto",
+    "description": "Um jogo de mundo aberto que acompanha três criminosos em Los Santos realizando assaltos e vivendo histórias interligadas.",
+    "imgUrl": "/images/gtav.png"
+  },
+  {
+    "id": 3,
+    "name": "God of War",
+    "releaseDate": "2018-04-20",
+    "developer": "Santa Monica Studio",
+    "genre": "Ação / Aventura",
+    "description": "Kratos vive no mundo da mitologia nórdica e embarca em uma jornada com seu filho Atreus enfrentando deuses e criaturas lendárias.",
+    "imgUrl": "/images/gow.jpg"
+  },
+  {
+    "id": 4,
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "releaseDate": "2017-03-03",
+    "developer": "Nintendo",
+    "genre": "Aventura / Mundo Aberto",
+    "description": "Link desperta após um longo sono e deve explorar o reino de Hyrule para derrotar Calamity Ganon e salvar Zelda.",
+    "imgUrl": "/images/zeldabotw.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Red Dead Redemption 2",
+    "releaseDate": "2018-10-26",
+    "developer": "Rockstar Studios",
+    "genre": "Ação / Aventura",
+    "description": "Uma história no Velho Oeste acompanhando Arthur Morgan e a gangue Van der Linde em meio ao declínio da era dos fora-da-lei.",
+    "imgUrl": "/images/rdr2.jpg"
+  },
+  {
+  "id": 6,
+  "name": "Elden Ring",
+  "releaseDate": "2022-02-25",
+  "developer": "FromSoftware",
+  "genre": "RPG / Ação",
+  "description": "Um RPG de ação em mundo aberto criado por Hidetaka Miyazaki e George R. R. Martin, com combates desafiadores e exploração livre em um universo sombrio.",
+  "imgUrl": "/images/eldenring.jpg"
+},
+{
+  "id": 7,
+  "name": "Cyberpunk 2077",
+  "releaseDate": "2020-12-10",
+  "developer": "CD Projekt Red",
+  "genre": "RPG / Mundo Aberto",
+  "description": "Um RPG futurista ambientado em Night City, onde você assume o papel de V em uma história cheia de escolhas e tecnologia avançada.",
+  "imgUrl": "/images/cyberpunk.jpg"
+},
+{
+  "id": 8,
+  "name": "Horizon Zero Dawn",
+  "releaseDate": "2017-02-28",
+  "developer": "Guerrilla Games",
+  "genre": "Ação / Aventura",
+  "description": "Em um mundo pós-apocalíptico dominado por máquinas, Aloy embarca em uma jornada para descobrir seu passado e salvar o futuro da humanidade.",
+  "imgUrl": "/images/horizonzero.png"
+}
+]

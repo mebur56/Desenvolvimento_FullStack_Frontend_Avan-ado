@@ -1,4 +1,4 @@
-function Home() {
+function NotFound() {
   return (
     <div>
       <h1>NotFound</h1>
@@ -7,4 +7,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default NotFound;

@@ -1,4 +1,4 @@
-function Home() {
+function GameDetails() {
   return (
     <div>
       <h1>Detalhe jogos</h1>
@@ -7,4 +7,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default GameDetails;

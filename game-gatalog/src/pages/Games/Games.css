@@ -1,0 +1,22 @@
+.games-container {
+  padding: 20px;
+}
+
+.games-title {
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* GRID DOS CARDS */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* opcional: fundo da página */
+.games-page {
+  min-height: 100vh;
+  background: #0f0f0f;
+}
