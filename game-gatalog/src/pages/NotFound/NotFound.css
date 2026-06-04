@@ -1,0 +1,33 @@
+.notfound-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #0f0f0f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  gap: 10px; /* 🔥 isso resolve o overlap */
+}
+
+.notfound-container h1 {
+  font-size: 100px;
+  margin: 0;
+  line-height: 1; /* 🔥 evita colisão vertical */
+  color: #4f46e5;
+}
+
+.notfound-container h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.notfound-container p {
+  color: #aaa;
+  margin: 0;
+  max-width: 400px;
+  line-height: 1.4;
+}

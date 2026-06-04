@@ -1,0 +1,45 @@
+.details-container {
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+  background: #0f0f0f;
+}
+
+.back-btn {
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.details-card {
+  display: flex;
+  gap: 20px;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.details-card img {
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+}
+
+.description {
+  margin-top: 10px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.loading {
+  color: white;
+  padding: 20px;
+}

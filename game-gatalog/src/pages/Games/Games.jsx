@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import request from "../../services/mockRequests"
 import GameCard from "../../components/GameCard/GameCard"
+import Loading from "../../components/Loading/Loading";
 import "./Games.css"
 function Games() {
   const [gameList, setGameList] = useState([]);
@@ -14,7 +15,7 @@ function Games() {
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -27,7 +28,7 @@ function Games() {
 
         <div className="games-grid">
           {loading ? (
-            <p>Inserir aqui o spinner</p>
+            <Loading/>
           ) : (
             gameList.map((game) => (
               <GameCard game={game} />

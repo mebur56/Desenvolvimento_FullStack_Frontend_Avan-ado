@@ -1,0 +1,42 @@
+.home {
+  background: #0f0f0f;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  padding: 60px 20px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  background-image: url("/images/background.png");
+}
+
+.title h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.title button {
+  margin-top: 20px;
+  padding: 10px 16px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.featured h2 {
+  margin-bottom: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+}
