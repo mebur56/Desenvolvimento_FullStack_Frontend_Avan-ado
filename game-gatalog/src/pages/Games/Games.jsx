@@ -59,7 +59,7 @@ function Games() {
                 <GameCard game={game} />
               )) :
                 (
-                  <div className="empty-state">
+                  <div className="empty-game">
                     <h2>🎮 Nenhum jogo encontrado</h2>
                     <p>Tente buscar por outro nome ou limpar o filtro.</p>
                   </div>

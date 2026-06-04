@@ -19,19 +19,19 @@
   background: #0f0f0f;
 }
 
-.empty-state {
+.empty-game {
   grid-column: 1 / -1;
   text-align: center;
   color: #aaa;
   margin-top: 40px;
 }
 
-.empty-state h2 {
+.empty-game h2 {
   color: white;
   margin-bottom: 8px;
 }
 
-.empty-state p {
+.empty-game p {
   font-size: 14px;
   color: #888;
 }

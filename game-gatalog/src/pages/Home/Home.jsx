@@ -22,32 +22,32 @@ function Home() {
     }, 800);
   }, []);
 
-  if (loading) return <Loading />;
 
   return (
     <div>
       <Header />
-      <div className="home">
+      {loading ? (<Loading />) : (
+        <div className="home">
+          <section className="title">
+            <h1>Catálogo de jogos</h1>
+            <p>Explore os melhores jogos da história</p>
+            <Tooltip text="Todos os Jogos">
+              <button onClick={() => navigate("/games")}>
+                Ver catálogo completo
+              </button>
+            </Tooltip>
+          </section>
+          <section className="featured">
+            <h2>🔥 Destaques</h2>
 
-        <section className="title">
-          <h1>Catálogo de jogos</h1>
-          <p>Explore os melhores jogos da história</p>
-          <Tooltip text="Todos os Jogos">
-            <button onClick={() => navigate("/games")}>
-              Ver catálogo completo
-            </button>
-          </Tooltip>
-        </section>
-        <section className="featured">
-          <h2>🔥 Destaques</h2>
+            <div className="grid">
+              {games.map((game) => (
+                <GameCard key={game.id} game={game} />
+              ))}
+            </div>
+          </section>
+        </div>)}
 
-          <div className="grid">
-            {games.map((game) => (
-              <GameCard key={game.id} game={game} />
-            ))}
-          </div>
-        </section>
-      </div>
     </div>
   );
 }
